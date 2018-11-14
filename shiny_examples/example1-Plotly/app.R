@@ -107,7 +107,13 @@ ui <- fluidPage(
     #tags$a(href="http://systematicinvestor.wordpress.com/", "Systematic Investor"),
     #"to demonstrate the use of Shiny's new grid options."),
   ),
+  p('For normal observations \\(X_i \\sim No(\\mu, \\sigma)\\) with \\(i=1,...,n\\)',
+    'the sample mean has distribution',
+    '$\\bar{X} \\sim No\\bigg(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\bigg)$'
+    ),
+  p('Try adding some more replications to see the convergence of \\(\\bar{X}\\)!!'),
   hr(),
+  
   #titlePanel("Playing with the Central Limit Theorem"),
   #titlePanel(title=div(img(src="UC_Santa_Barbara_Wordmark_Navy_RGB.png",height = 30), "My Title")),
   
@@ -129,9 +135,9 @@ ui <- fluidPage(
           
           h4("Central Limit Theorem"),
           withMathJax(),
-          helpText('For normal observations \\(X_i \\sim No(\\mu, \\sigma)\\) with \\(i=1,...,n\\)'),
-          helpText('the sample mean has distribution'),
-          helpText('$$\\bar{X} \\sim No\\bigg(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\bigg)$$'),
+          #helpText('For normal observations \\(X_i \\sim No(\\mu, \\sigma)\\) with \\(i=1,...,n\\)'),
+          #helpText('the sample mean has distribution'),
+          #helpText('$$\\bar{X} \\sim No\\bigg(\\mu, \\frac{\\sigma}{\\sqrt{n}}\\bigg)$$'),
           #sliderInput("mu", "Normal mean \u03BC:", 
           # All your styles will go here
           #tags$style(HTML(".js-irs-0 .irs-single {color:black; background:none;}, 
@@ -151,7 +157,7 @@ ui <- fluidPage(
           #sliderInput("n", "Sample size n:", 
           #sliderInput("n", "Sample size \\(n\\)", 
           #            min = 5, max = 100, value = 5, step= 5),
-          helpText('Add more replications to see the convergence of \\(\\bar{X}\\)!!'),
+          #helpText('Add more replications to see the convergence of \\(\\bar{X}\\)!!'),
           sliderInput("rep", "# of replications of \\(\\bar{X}\\) ", 
           #sliderInput("rep", "Add more replications to see the convergence of \\(\\bar{X}\\) ", 
                       min = 10, max = maxReps, value = 5, step= 10),
@@ -235,7 +241,8 @@ server <- function(input, output, session) {
                 name = "Density") %>% 
       layout(yaxis2 = list(overlaying = "y2", side = "right",showline=F,showticklabels = F,showgrid = F),
              yaxis=list(title="Counts", titlefont= list(size=12)),
-             legend = list(showlegend = F))
+             legend = list(showlegend = F)) %>%
+      config(displayModeBar = F)
 
 
     # p2: 
@@ -255,10 +262,11 @@ server <- function(input, output, session) {
       layout(
           xaxis = list(title = ""), 
              yaxis = list(title = 'Average of <br> Sample Mean', titlefont= list(size=12)),
-             legend = list(showlegend = F)) 
+             legend = list(showlegend = F)) %>%
+      config(displayModeBar = F)
              #yaxis = list(title = "$$\\bar{X}$$", titlefont= list(size=12))) %>% 
       #config(mathjax = "cdn")
-           
+
     # p3: 
     p3 <- plot_ly(myData$df[1:isolate(input$rep),], x = ~replications, 
                   y = ~sdAvg, 
@@ -271,7 +279,8 @@ server <- function(input, output, session) {
                    y = myData$sd/sqrt(myData$n), yend = myData$sd/sqrt(myData$n)) %>%
       layout(xaxis = list(title = "# of replications"), 
              yaxis = list(title = 'Standard Deviation <br> of Sample Mean', titlefont= list(size=12)),
-             legend = list(showlegend = F)) 
+             legend = list(showlegend = F)) %>%
+      config(displayModeBar = F)
       
     
     if(F){
