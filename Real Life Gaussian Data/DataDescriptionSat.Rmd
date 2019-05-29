@@ -1,0 +1,1 @@
+The SAT is a standardized test widely used for college admissions in the United States. SAT results from a Math Placement exam at a liberal arts college.

@@ -1,0 +1,1 @@
+Newborns come in a range of healthy sizes. Most babies born between 37 and 40 weeks weigh somewhere between 5 pounds, 8 ounces (2,500 grams) and 8 pounds, 13 ounces (4,000 grams). Newborns who are lighter or heavier than the average baby are usually fine.
