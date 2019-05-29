@@ -1,0 +1,1 @@
+That would be a great idea for a handful of trees, but not very practical for a forest with hundreds or millions of trees. If all the trees come from the same species, do you really need to measure them all to get a good estimate? 

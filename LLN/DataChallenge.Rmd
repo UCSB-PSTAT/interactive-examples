@@ -1,0 +1,3 @@
+Suppose you are part of this project and you would like to estimate the height of an average pine planted with 10-foot spacing. 
+
+What would you do?
