@@ -1,0 +1,1 @@
+You could go to the forest to measure the height of all the pines and compute their average $\bar{x}$. With a margin of error of $10\%$ from the sample average, you can obtain the interval $[0.9 \bar{x}, 1.1 \bar{x}]$
