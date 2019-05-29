@@ -1,0 +1,3 @@
+You could go to the forest to measure the height of all the pines, and then compare the average height of pines with and without fertilizer.
+
+If pines with fertilizer exhibit a greater sample mean you conclude that the fertilizer promotes plant growth.

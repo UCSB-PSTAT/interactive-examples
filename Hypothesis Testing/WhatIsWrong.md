@@ -1,0 +1,5 @@
+By concluding that the fertilizer promotes plant growth you are deciding in favor of such hypothesis without any guarantee of any form.
+
+What if this is not correct because it does not hold for other pine forests with the same characteristics? 
+
+You would like to have an 'error guarantee' for taking such decision.

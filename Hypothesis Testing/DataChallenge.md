@@ -1,0 +1,3 @@
+A fertilizer is believed to promote consistent plant growth. And It has been applied to some of the pines planted with 10-foot spacing. 
+
+How can you verify if the hypothesis on the fertilizer holds?
