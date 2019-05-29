@@ -1,0 +1,97 @@
+
+/* logo */
+.skin-blue .main-header .logo {
+background-color: #003660;
+}
+
+/* logo when hovered */
+.skin-blue .main-header .logo:hover {
+background-color: #003660;
+}
+
+/* navbar (rest of the header) */
+.skin-blue .main-header .navbar {
+background-color: #003660;
+} 
+
+/* sliderInput - bar: change color*/
+.irs-bar {
+border-top: 1px solid #003660;
+border-bottom: 1px solid #003660;
+background: #003660;
+}
+
+irs-from, .irs-to, .irs-single {
+background: #003660;
+}
+
+.irs-bar-edge {
+border: 1px solid #003660;
+border-right-color: #003660;
+background: #003660;
+}
+
+/* sliderInput - play button: change size, position, and color */  
+.glyphicon{
+top: 20px;
+font-size: 25px;	
+}
+
+.slider-animate-container{
+text-align: left;
+}
+
+a{
+color:#003660;
+}
+
+/* primary status colors */
+.box.box-primary{
+border-top-color:#003660;
+}
+
+.box.box-solid.box-primary>.box-header {
+color:#fff;
+background:#003660;
+}
+
+.box.box-solid.box-primary{
+border-bottom-color:#003660;
+border-left-color:#003660;
+border-right-color:#003660;
+border-top-color:#003660;
+}
+
+/* warning status colors */
+.box.box-warning{
+border-top-color:#FEBC11;
+}
+
+.box.box-solid.box-warning>.box-header {
+color:#fff;
+background:#FEBC11;
+}
+
+.box.box-solid.box-warning{
+border-bottom-color:#FEBC11;
+border-left-color:#FEBC11;
+border-right-color:#FEBC11;
+border-top-color:#FEBC11;
+}
+
+.box.box-solid.box-warning.bg-yellow.box-body{
+border-bottom-color:#FEBC11;
+border-left-color:#FEBC11;
+border-right-color:#FEBC11;
+border-top-color:#FEBC11;
+background:#FEBC11;
+}
+.myClass { 
+font-size: 25px;
+line-height: 50px;
+text-align: left;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+padding: 0 15px;
+overflow: hidden;
+color: white;
+}

@@ -1,0 +1,1 @@
+By using only pair of points for your estimates you are discarding the information contained in the rest of the points. Moreover, you have no statistical guarantees that these estimates will recover the true values of $\beta_0$ and $\beta_1$.
